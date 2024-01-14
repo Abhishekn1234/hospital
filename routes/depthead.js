@@ -92,7 +92,7 @@ router.delete('/api/delete_department_head/:id', async (req, res) => {
 
 
 router.put('/api/update_department_head/:id', upload.single('profileImage'), async (req, res) => {
-  const { id } = req.params; // Corrected destructuring here
+  const { id } = req.params; 
   const { name, employeeNumber, age, profileDescription, department, profileImage } = req.body;
 
   const updatedHead = {
